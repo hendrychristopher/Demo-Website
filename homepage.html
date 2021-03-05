@@ -1,0 +1,100 @@
+<style>
+    .home_page {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        /* background-image: url('C:/Users/RAMYA P/Desktop/home_page.jpg');
+        background-repeat: no-repeat; */
+        background-size: 100% 100%;
+        /* overflow-x: hidden; 
+        overflow-y: hidden;
+        overflow: hidden; */
+    }
+
+    .header {
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        overflow: hidden;
+        background: linear-gradient(to bottom right, #8b5ed3, #020407);
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        height: 50px;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+        background: linear-gradient(to bottom right, #8b5ed3, #020407);
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        font-size: 21px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        border-radius: 36px;
+        padding: 13px 65px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+</style>
+<div class="home_page">
+    <div class="header">
+        <ul>
+            <li><a class="active" href="#wedding">Wedding</a></li>
+            <li><a href="#baby">Baby</a></li>
+            <li><a href="#Events">Events</a></li>
+            <li><a href="#stationery">Stationery</a></li>
+            <li><a href="#websites">websites</a></li>
+            <li><a href="#business">Business Cards</a>></li>
+            <li><input type="text" placeholder="Search.." name="search2"></li>
+            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+        </ul>
+    </div>
+    <!-- <form id="search_mini_form" action="https://www.basicinvite.com/catalogsearch/result/" method="get">
+            <div class="form-search">
+            <label for="search">Search:</label>
+            <input id="search" type="text" name="q" placeholder="Search store" value="" class="input-text" maxlength="60" autocomplete="off">
+            <input type="hidden" name="order" value="relevance">
+            <input type="hidden" name="dir" value="desc">
+            <button type="submit" title="Search" class="button"><span><span>Search</span></span></button>
+            <div id="search_autocomplete" class="search-autocomplete" style="display: none;"></div>
+            <script type="text/javascript">
+            //<![CDATA[
+            jQuery(function ($) {
+            $('#search_mini_form button').on('click', function () {
+            var $search = $('input#search');
+            if ($search.val() == "") {
+            $search.toggle().focus();
+            }
+            })
+            });
+            var searchForm = new Varien.searchForm('search_mini_form', 'search', '');
+            searchForm.initAutocomplete('https://www.basicinvite.com/catalogsearch/ajax/suggest/', 'search_autocomplete');
+            //]]>
+            </script>
+            </div>
+            </form> -->
+    <!-- <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Search.." name="search2">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form> -->
+
+    <!-- <div class="footer">
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#post">Post Updates</a></li>
+      </ul>
+   </div> -->
+</div>
