@@ -69,16 +69,8 @@
     }
 
     .dropbtn {
-        background-color: #4CAF50;
-        color: white;
-        padding: 19px 100px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-    }
-    .dropbtn1 {
-        background-color: #4CAF50;
-        color: white;
+        /* background-color: #4CAF50; */
+        color: #231f20;
         padding: 19px 100px;
         font-size: 16px;
         border: none;
@@ -88,6 +80,8 @@
     .dropdown {
         position: relative;
         display: inline-block;
+        top: 115px;
+        border: 1px solid #000;
     }
 
     .dropdown-content {
@@ -117,24 +111,35 @@
     .dropdown:hover .dropbtn {
         background-color: #3e8e41;
     }
+
+    .logo {
+        position: absolute;
+        top: 0px;
+        width: 125px;
+        height: 115px;
+        left: 705px;
+    }
 </style>
 <div class="home_page">
     <div class="dropdown">
         <ul>
-        <li><button class="dropbtn">Baby</button></li>
-        <li><button class="dropbtn1">Events</button></li>
-        <li><button class="dropbtn">Stationery</button></li>
-        <li><button class="dropbtn">Websites</button></li>
-        <li><button class="dropbtn">Business Cards</button></li>
-        <li><input type="text" style="padding:15px 2px;" placeholder="Search.." name="search2"></li>
+            <li><button class="dropbtn">Baby</button></li>
+            <li><button class="dropbtn">Events</button></li>
+            <li><button class="dropbtn">Stationery</button></li>
+            <li><button class="dropbtn">Websites</button></li>
+            <li><button class="dropbtn">Business Cards</button></li>
+            <li><input type="text" id="search" style="padding:15px 2px;" placeholder="Search.." name="search2"></li>
         </ul>
         <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">Baby shower</a>
+            <a href="#">1st Birthday</a>
+            <a href="#">Birthday</a>
         </div>
     </div>
-   
+    <div class="logo">
+        <img src="C:/Users/RAMYA P/Desktop/sample_logo.jpg" style="width:100%;height:auto;">
+    </div>
+
     <!-- <form id="search_mini_form" action="https://www.basicinvite.com/catalogsearch/result/" method="get">
             <div class="form-search">
             <label for="search">Search:</label>
@@ -171,3 +176,9 @@
       </ul>
    </div> -->
 </div>
+<script>
+    var q = "Testing google search";
+    document.getElementById('search').onkeyup = function () {
+        window.open('http://google.com/search?q=' + q);
+    };
+</script>
